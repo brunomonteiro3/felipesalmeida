@@ -1,0 +1,174 @@
+html
+	position: relative
+	min-height: 430px
+	height: 100%
+	
+	@media only screen and (max-width: 640px)
+		min-height: 550px
+
+body
+	margin: 0
+	background-repeat: no-repeat
+	background-position: center center 
+	background-attachment: fixed 
+	background-color: #060606
+	-webkit-background-size: cover !important
+	-moz-background-size: cover !important
+	-o-background-size: cover !important
+	background-size: cover !important
+	font-family: 'Helvetica', Arial
+	color: #f6f6f6
+	font-size: 28px
+	-webkit-font-smoothing: antialiased
+	-moz-osx-font-smoothing: grayscale
+
+	.info	
+		position: absolute
+		padding: 40px 45px 40px 40px
+		bottom: 0
+		top: 0
+
+		.tel
+			position: absolute
+			bottom: 40px
+			left: 40px
+			font-size: 20px
+
+		h1, h2, span, li
+			font-size: 28px
+			font-weight: bold
+
+		h1,
+		h2
+			background: #FFF
+			color: #060606
+			font-size: 42px
+			padding: 7px 13px 4px 3px
+			letter-spacing: -3.8px
+
+		h1
+			margin-bottom: 6px
+			margin-top: 0
+			float: left
+
+		h2
+			clear: both
+			margin: 0
+
+		.title,
+		.sub-title
+			line-height: 1
+
+		a
+			text-decoration: none
+			color: #f6f6f6
+			font-weight: bold
+
+		.links
+			margin-top: 30px
+
+			ul 
+				margin: 0
+				padding: 0
+				list-style: none
+
+				li
+					margin-bottom: 4px
+
+					&.email
+						a
+							&:before
+								left: 30px
+								content: 'drop me a message'
+							
+							&:after
+								width: 85px
+
+							&:hover
+								&:before
+									left: 100px
+
+					&.behance
+						a
+							&:before
+								left: 40px
+								content: 'view my work'
+							
+							&:after
+								width: 118px
+
+							&:hover
+								&:before
+									left: 130px
+
+					&.twitter
+						a
+							&:before
+								left: 30px
+								content: 'random thoughts'
+							
+							&:after
+								width: 85px
+
+							&:hover
+								&:before
+									left: 100px
+
+					&.instagram
+						a
+							&:before
+								left: 50px
+								content: 'photographic diary'
+							
+							&:after
+								width: 136px
+
+							&:hover
+								&:before
+									left: 150px
+
+					&.tumblr
+						a
+							&:before
+								left: 40px
+								content: 'visual references'
+							
+							&:after
+								width: 90px
+
+							&:hover
+								&:before
+									left: 105px
+
+
+			a
+				display: block
+				position: relative
+
+				&:before
+					position: absolute
+					color: #4d4d4d
+					opacity: 0
+					transition: all 0.5s ease
+					letter-spacing: -2px
+	
+					@media only screen and (max-width: 640px)
+						display: none
+
+				&:after
+					content: ' '
+					position: absolute
+					background: #FFF
+					width: 0
+					opacity: 0
+					transition: all 0.5s ease
+					height: 2px
+					left: 0
+					bottom: 0
+
+				&:hover
+					&:before
+						opacity: 1
+
+					&:after
+						opacity: 1
